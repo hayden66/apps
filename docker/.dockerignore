@@ -1,0 +1,7 @@
+.dockerignore
+_pycache_/
+Include/
+Lib/
+Scripts/
+Dockerfile
+pyvenv.cfg
