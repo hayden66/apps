@@ -16,8 +16,6 @@ spec:
       containers:
         - name: codesonar
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
-          securityContext:
-            runAsNonRoot: true
           ports:
             - name: codesonar-web
               containerPort: 7340
