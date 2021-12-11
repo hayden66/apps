@@ -2,7 +2,7 @@
 # Declare variables to be passed into your templates
 
 # Number of pods to be deployed
-replicaCount: 1
+replicaCount: 3
 
 namespace:
   name: codesonar
