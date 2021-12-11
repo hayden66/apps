@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: {{ .Values.namespace.name | quote }}
+  name: codesonar
+spec:
+  selector:
+    app: codesonar
+  type: NodePort
+  ports:
+    - name: codesonar-web
+      port: 7340
+      protocol: TCP
+      targetPort: codesonar-web
