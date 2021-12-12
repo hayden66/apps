@@ -14,4 +14,4 @@ maintainers:
 dependencies:
   - name: argo-cd
     version: 3.28.1
-    repository: https://argoproj.github.io/argo-helm/charts
+    repository: https://argoproj.github.io/argo-helm/
