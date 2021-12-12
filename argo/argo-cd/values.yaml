@@ -2,21 +2,22 @@
 ## Ref: https://github.com/argoproj/argo-cd
 ##
 
-global:
-  image:
-    # -- If defined, a repository applied to all ArgoCD deployments
-    repository: quay.io/argoproj/argocd
-    # -- Overrides the global ArgoCD image tag whose default is the chart appVersion
-    tag: "v2.1.7"
+argo-cd:
+  global:
+    image:
+      # -- If defined, a repository applied to all ArgoCD deployments
+      repository: quay.io/argoproj/argocd
+      # -- Overrides the global ArgoCD image tag whose default is the chart appVersion
+      tag: "v2.1.7"
+      replicas: 1
+      
+  ## Server
+  server:
+    # -- The number of server pods to run
     replicas: 1
-    
-## Server
-server:
-  # -- The number of server pods to run
-  replicas: 1
-
-  ## Server service configuration
-  service:
-    type: NodePort
-    # -- Server service http port for NodePort service type (only if `server.service.type` is set to "NodePort")
-    nodePortHttp: 30080
+  
+    ## Server service configuration
+    service:
+      type: NodePort
+      # -- Server service http port for NodePort service type (only if `server.service.type` is set to "NodePort")
+      nodePortHttp: 30080
