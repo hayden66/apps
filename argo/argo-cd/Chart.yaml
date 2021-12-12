@@ -1,3 +1,4 @@
+---
 apiVersion: v2
 appVersion: v2.1.7
 description: A Helm chart for ArgoCD, a declarative, GitOps continuous delivery tool for Kubernetes.
