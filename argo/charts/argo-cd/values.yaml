@@ -14,7 +14,7 @@ global:
     # -- If defined, a repository applied to all ArgoCD deployments
     repository: quay.io/argoproj/argocd
     # -- Overrides the global ArgoCD image tag whose default is the chart appVersion
-    tag: ""
+    tag: "v2.1.7"
     # -- If defined, a imagePullPolicy applied to all ArgoCD deployments
     imagePullPolicy: IfNotPresent
   # -- Annotations for the all deployed pods
@@ -872,7 +872,7 @@ server:
     # -- Server service labels
     labels: {}
     # -- Server service type
-    type: ClusterIP
+    type: NodePort
     # -- Server service http port for NodePort service type (only if `server.service.type` is set to "NodePort")
     nodePortHttp: 30080
     # -- Server service https port for NodePort service type (only if `server.service.type` is set to "NodePort")
