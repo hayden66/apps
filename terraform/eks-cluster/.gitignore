@@ -1,6 +1,9 @@
 # Local .terraform directories
 **/.terraform/*
 
+# EKS kubeconfig file
+kubeconfig_education*
+
 # .tfstate files
 *.tfstate
 *.tfstate.*
