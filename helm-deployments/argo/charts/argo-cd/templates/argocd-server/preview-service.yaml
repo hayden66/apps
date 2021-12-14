@@ -23,7 +23,7 @@ spec:
     {{- if eq .Values.server.service.type "NodePort" }}
     nodePort: {{ .Values.server.previewService.nodePortHttp }}
     {{- end }}
-  - name: {{ .Values.server.service.servicePortHttpsName }}
+  - name: {{ .Values.server.previewService.servicePortHttpsName }}
     protocol: TCP
     port: {{ .Values.server.service.servicePortHttps }}
     targetPort: {{- if .Values.server.service.namedTargetPort }} {{ .Values.server.name }} {{- else }} {{ .Values.server.containerPort }} {{- end }}
