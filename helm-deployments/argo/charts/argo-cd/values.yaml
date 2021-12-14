@@ -868,6 +868,7 @@ server:
   ## Server preview service configuration
   previewService:
     nodePortHttp: 30081
+    nodePortHttps: 31443
 
   ## Server service configuration
   service:
