@@ -126,7 +126,7 @@ dashboard:
     runAsNonRoot: true
   containerSecurityContext: {}
   service:
-    type: ClusterIP
+    type: NodePort
   serviceAccount:
     create: true
     annotations: {}
