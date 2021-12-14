@@ -105,7 +105,7 @@ imagePullSecrets: []
 # - name: argo-pull-secret
 
 dashboard:
-  enabled: false
+  enabled: true
   component: rollouts-dashboard
   ## Node selectors and tolerations for server scheduling to nodes with taints
   ## Ref: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
