@@ -865,6 +865,10 @@ server:
     # -- Certificate manager secret name
     secretName: argocd-server-tls
 
+  ## Server preview service configuration
+  previewService:
+    nodePortHTTP: 30081
+
   ## Server service configuration
   service:
     # -- Server service annotations

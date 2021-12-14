@@ -21,7 +21,7 @@ spec:
     port: {{ .Values.server.service.servicePortHttp }}
     targetPort: {{- if .Values.server.service.namedTargetPort }} {{ .Values.server.name }} {{- else }} {{ .Values.server.containerPort }} {{- end }}
     {{- if eq .Values.server.service.type "NodePort" }}
-    nodePort: {{ .Values.server.service.nodePortHttp }}
+    nodePort: {{ .Values.server.previewService.nodePortHttp }}
     {{- end }}
   - name: {{ .Values.server.service.servicePortHttpsName }}
     protocol: TCP
