@@ -1,6 +1,6 @@
 {{- $redisHa := (index .Values "redis-ha") -}}
-apiVersion: argoproj.io/v1alpha1
-kind: Rollout
+apiVersion: apps/v1
+kind: Deployment
 metadata:
   name: {{ template "argo-cd.server.fullname" . }}
   labels:
@@ -14,10 +14,6 @@ spec:
   {{- if (ne .Values.server.autoscaling.enabled true) }}
   replicas: {{ .Values.server.replicas }}
   {{- end }}
-  strategy:
-    blueGreen:
-      activeService: {{ template "argo-cd.server.fullname" . }}
-      previewService: {{ template "argo-cd.server.fullname" . }}-preview
   template:
     metadata:
       {{- with (mergeOverwrite (deepCopy .Values.global.podAnnotations) .Values.server.podAnnotations) }}
