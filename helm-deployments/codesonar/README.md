@@ -1,1 +1,0 @@
-CodeSonar is a static code analysis tool from GrammaTech. CodeSonar is used to find and fix bugs and security vulnerabilities in source and binary code.
