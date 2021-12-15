@@ -11,6 +11,6 @@ spec:
       targetPort: http
       protocol: TCP
       name: http
-      nodePort: {{ .Values.service.nodePort }}
+      nodePort: {{ .Values.previewService.nodePort }}
   selector:
     {{- include "python-helm.selectorLabels" . | nindent 4 }}

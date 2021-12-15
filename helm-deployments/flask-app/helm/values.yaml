@@ -38,6 +38,9 @@ securityContext: {}
   # runAsNonRoot: true
   # runAsUser: 1000
 
+previewService:
+  nodePort: 30001
+
 service:
   type: NodePort
   port: 8080
