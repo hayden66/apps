@@ -35,7 +35,7 @@ ENV HELM_PLUGIN_DIR=/home/argocd/.config/helm/.data/plugins/
 
 # Install Helm and Kustomize
 COPY --from=builder /usr/local/bin/helm /usr/local/bin/helm
-COPY --from=builder /usr/local/bin/helm /home/argocd/.config/helm
+COPY --from=builder /usr/local/bin/helm /home/argocd/.config/helm/helm
 COPY --from=builder /usr/local/bin/kustomize /usr/local/bin/kustomize
 
 # Assign argocd user ownership of /home/argocd directory
