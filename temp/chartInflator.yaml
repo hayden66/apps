@@ -1,11 +1,11 @@
 apiVersion: builtin
 kind: HelmChartInflationGenerator
 metadata:
-  name: temperature
-Name: temperature
+  name: temp
+Name: temp
 repo: https://lucasrod16.github.io/helm-charts/
 chartVersion: 0.1.0
 configHome: /home/argocd/.config/helm
-releaseName: temperature
+releaseName: temp
 releaseNamespace: temp
 values: values.yaml
