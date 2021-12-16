@@ -5,7 +5,7 @@ metadata:
 Name: temperature
 repo: https://lucasrod16.github.io/helm-charts/
 chartVersion: 0.1.0
-
+configHome: /home/argocd/.config/helm
 releaseName: temperature
 releaseNamespace: temp
 values: values.yaml

@@ -5,6 +5,7 @@ metadata:
 name: argo-rollouts
 repo: https://lucasrod16.github.io/helm-charts/
 chartVersion: 2.6.0
+configHome: /home/argocd/.config/helm
 releaseName: argo-rollouts
 namespace: argo-rollouts
 valuesFile: values.yaml

@@ -5,6 +5,7 @@ metadata:
 name: argo-cd
 repo: https://lucasrod16.github.io/helm-charts/
 chartVersion: 3.28.1
+configHome: /home/argocd/.config/helm
 releaseName: argo-cd
 namespace: argo-cd
 valuesFile: values.yaml
