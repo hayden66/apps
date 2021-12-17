@@ -17,6 +17,6 @@
     hosts:
       - host: kubernetes.docker.internal
         paths:
-          - path: /temp
+          - path: /
             pathType: Prefix
 
