@@ -1,11 +1,11 @@
 apiVersion: builtin
 kind: HelmChartInflationGenerator
 metadata:
-  name: temp
-Name: temp
+  name: ingress-nginx
+Name: ingress-nginx
 repo: https://lucasrod16.github.io/helm-charts/
 chartVersion: 0.1.0
 configHome: /home/argocd/.config/helm
-releaseName: temp
-releaseNamespace: temp
+releaseName: ingress-nginx
+releaseNamespace: ingress-nginx
 values: values.yaml
