@@ -13,8 +13,7 @@
   ingress:
     enabled: true
     className: "nginx"
-    annotations:
-    - kubernetes.io/ingress.class: nginx
+    annotations: {}
     hosts:
       - host: kubernetes.docker.internal
         paths:
