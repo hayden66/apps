@@ -8,4 +8,4 @@ chartVersion: 0.1.0
 configHome: /home/argocd/.config/helm
 releaseName: temp
 releaseNamespace: temp
-values: values.yaml
+valuesFile: values.yaml
