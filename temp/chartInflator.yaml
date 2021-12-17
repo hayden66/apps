@@ -2,10 +2,19 @@ apiVersion: builtin
 kind: HelmChartInflationGenerator
 metadata:
   name: temp
-Name: temp
+
+# Helm chart to be inflated
+name: temp
+
+# Helm chart repo and version
 repo: https://lucasrod16.github.io/helm-charts/
 chartVersion: 0.1.0
-configHome: /home/argocd/.config/helm
+
+# App name and namespace
 releaseName: temp
 releaseNamespace: temp
+
+# Helm settings
 valuesFile: values.yaml
+valuesMerge: merge
+configHome: /home/argocd/.config/helm
