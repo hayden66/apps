@@ -1,0 +1,23 @@
+repoUrl: https://github.com/lucasrod16/apps.git
+targetRevision: main
+project: default
+namespace: argo-cd
+
+bootstrap:
+- wave: 1
+  apps:
+  - name: argo-cd 
+    path: argo-cd
+    namespace: argo-cd
+  - name: argo-rollouts
+    path: argo-rollouts
+    namespace: argo-rollouts
+  - name: flask
+    path: flask
+    namespace: flask
+  - name: ingress-nginx
+    path: ingress-nginx
+    namespace: ingress-nginx
+  - name: temp
+    path: temp
+    namespace: temp

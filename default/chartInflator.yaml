@@ -1,0 +1,22 @@
+apiVersion: builtin
+kind: HelmChartInflationGenerator
+metadata:
+  name: default
+
+# App Name, Namespace
+releaseName: default
+# releaseNamespace not applicable for umbrellas
+# namespace: managed-apps
+
+# Helm Chart to be Inflated
+name: umbrella
+
+# # change to s3 bucket prior to finalizing release
+repo: https://lucasrod16.github.io/helm-charts/
+chartVersion: 0.1.0
+
+# Helm Settings (likely do not need to be changed)
+valuesFile: values.yaml
+valuesMerge: merge
+configHome: /home/argocd/.config/helm
+
