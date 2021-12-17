@@ -15,9 +15,8 @@ temp:
   ingress:
     enabled: true
     className: "nginx"
-    annotations: {}
-      # kubernetes.io/ingress.class: nginx
-      # kubernetes.io/tls-acme: "true"
+    annotations:
+    - kubernetes.io/ingress.class: nginx
     hosts:
       - host: kubernetes.docker.internal
         paths:
