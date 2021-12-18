@@ -15,6 +15,9 @@ bootstrap:
   - name: ingress-nginx
     path: ingress-nginx
     namespace: ingress-nginx
+  - name: tekton
+    path: tekton
+    namespace: tekton-pipeline
   - name: temp
     path: temp
     namespace: temp
