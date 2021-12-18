@@ -6,15 +6,9 @@ namespace: argocd
 bootstrap:
 - wave: 1
   apps:
-  - name: argo-rollouts
-    path: argo-rollouts
-    namespace: argo-rollouts
   - name: ingress-nginx
     path: ingress-nginx
     namespace: ingress-nginx
-  - name: tekton
-    path: tekton
-    namespace: tekton-pipelines
   - name: temp
     path: temp
     namespace: temp
