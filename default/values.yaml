@@ -12,9 +12,6 @@ bootstrap:
   - name: argo-rollouts
     path: argo-rollouts
     namespace: argo-rollouts
-  - name: flask
-    path: flask
-    namespace: flask
   - name: ingress-nginx
     path: ingress-nginx
     namespace: ingress-nginx
