@@ -11,6 +11,7 @@ server:
   service:
     type: NodePort
     nodePortHttp: 30050
+    nodePortHttps: 38443
 
   config: 
     kustomize.buildOptions: '--enable-helm'
