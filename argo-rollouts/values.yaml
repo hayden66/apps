@@ -11,7 +11,7 @@ controller:
     httpGet:
       path: /metrics
       port: 8090
-    initialDelaySeconds: 60
+    initialDelaySeconds: 240
     periodSeconds: 20
     failureThreshold: 3
     successThreshold: 1
@@ -20,7 +20,7 @@ controller:
     httpGet:
       path: /metrics
       port: 8090
-    initialDelaySeconds: 30
+    initialDelaySeconds: 120
     periodSeconds: 5
     failureThreshold: 3
     successThreshold: 1
