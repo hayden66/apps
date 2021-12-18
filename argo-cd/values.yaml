@@ -14,9 +14,8 @@ global:
 server: 
   service:
     type: NodePort
-  ingress:
-    enabled: true
-    annotations: 
-      nginx.ingress.kubernetes.io/ssl-passthrough: "true"
   extraArgs:
   - --insecure
+
+  config: 
+    kustomize.buildOptions: '--enable-helm'
