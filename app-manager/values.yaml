@@ -8,7 +8,7 @@ bootstrap:
   apps:
   - name: argo-cd 
     path: argo-cd
-    namespace: argo-cd
+    namespace: argocd
   - name: argo-rollouts
     path: argo-rollouts
     namespace: argo-rollouts
