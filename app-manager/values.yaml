@@ -1,7 +1,7 @@
 repoUrl: https://github.com/lucasrod16/apps.git
 targetRevision: main
 project: default
-namespace: app-manager
+namespace: argocd
 
 bootstrap:
 - wave: 1
