@@ -1,0 +1,11 @@
+apiVersion: builtin
+kind: HelmChartInflationGenerator
+metadata:
+  name: tekton-pipeline
+Name: tekton-pipeline
+repo: https://cdfoundation.github.io/tekton-helm-chart/
+chartVersion: 0.27.2
+configHome: /home/argocd/.config/helm
+releaseName: tekton-pipeline
+releaseNamespace: tekton-pipeline
+values: values.yaml
