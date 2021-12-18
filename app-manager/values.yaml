@@ -6,9 +6,6 @@ namespace: argocd
 bootstrap:
 - wave: 1
   apps:
-  - name: argo-cd 
-    path: argo-cd
-    namespace: argocd
   - name: argo-rollouts
     path: argo-rollouts
     namespace: argo-rollouts
