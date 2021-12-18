@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: temp
+  repository: registry.hub.docker.com/lucasrod96/temp
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "v0.1.0"
