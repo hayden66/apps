@@ -1,10 +1,10 @@
 apiVersion: builtin
 kind: HelmChartInflationGenerator
 metadata:
-  name: default
+  name: app-manager
 
 # App Name, Namespace
-releaseName: default
+releaseName: app-manager
 # releaseNamespace not applicable for umbrellas
 # namespace: managed-apps
 
