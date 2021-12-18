@@ -10,3 +10,13 @@ global:
     tag: "v2.2.0-lr"
     # -- If defined, a imagePullPolicy applied to all ArgoCD deployments
     imagePullPolicy: IfNotPresent
+
+server: 
+  service:
+    type: NodePort
+  ingress:
+    enabled: true
+    annotations: 
+      nginx.ingress.kubernetes.io/ssl-passthrough: "true"
+  extraArgs:
+  - --insecure
