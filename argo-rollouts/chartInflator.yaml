@@ -3,7 +3,7 @@ kind: HelmChartInflationGenerator
 metadata:
   name: argo-rollouts
 name: argo-rollouts
-repo: https://lucasrod16.github.io/helm-charts/
+repo: https://argoproj.github.io/argo-helm
 chartVersion: 2.6.0
 configHome: /home/argocd/.config/helm
 releaseName: argo-rollouts
