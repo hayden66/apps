@@ -1,0 +1,20 @@
+apiVersion: builtin
+kind: HelmChartInflationGenerator
+metadata:
+  name: jenkins
+
+# Helm chart to be inflated
+name: jenkins
+
+# Helm chart repo and version
+repo: https://charts.jenkins.io
+chartVersion: 3.9.4
+
+# App name and namespace
+releaseName: jenkins
+releaseNamespace: jenkins
+
+# Helm settings
+valuesFile: values.yaml
+valuesMerge: merge
+configHome: /home/argocd/.config/helm
