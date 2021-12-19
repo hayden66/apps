@@ -6,12 +6,12 @@ namespace: argocd
 bootstrap:
 - wave: 1
   apps:
-  # - name: jenkins
-  #   path: jenkins
-  #   namespace: jenkins
-  - name: ingress-nginx
-    path: ingress-nginx
-    namespace: ingress-nginx
+  - name: jenkins
+    path: jenkins
+    namespace: jenkins
+  # - name: ingress-nginx
+  #   path: ingress-nginx
+  #   namespace: ingress-nginx
   - name: temp
     path: temp
     namespace: temp

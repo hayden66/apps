@@ -1,5 +1,5 @@
 #!/bin/bash
 
 kubectl create namespace argocd && \
-kubectl create namespace ingress-nginx && \
+kubectl create namespace jenkins && \
 kubectl create namespace temp
