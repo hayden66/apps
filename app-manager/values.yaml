@@ -4,7 +4,7 @@ project: default
 namespace: argocd
 
 bootstrap:
-- wave: 1
+- wave: 2
   apps:
   - name: jenkins
     path: jenkins
