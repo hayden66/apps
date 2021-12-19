@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: registry.hub.docker.com/jenkins/jenkins
+  repository: registry.hub.docker.com/lucasrod96/jenkins
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "latest"
+  tag: "lts-lr"
 
 service:
   type: NodePort
